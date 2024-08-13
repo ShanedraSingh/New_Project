@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction Dashboard</title>
+  <style>
+    /* Add some basic styling */
+  </style>
+</head>
+<body>
+  <h1>Transaction Dashboard</h1>
+
+  <div>
+    <label for="month">Select Month:</label>
+    <select id="month">
+      <option value="01">January</option>
+      <option value="02">February</option>
+      <option value="03" selected>March</option>
+      <option value="04">April</option>
+      <option value="05">May</option>
+      <option value="06">June</option>
+      <option value="07">July</option>
+      <option value="08">August</option>
+      <option value="09">September</option>
+      <option value="10">October</option>
+      <option value="11">November</option>
+      <option value="12">December</option>
+    </select>
+  </div>
+
+  <input type="text" id="search" placeholder="Search transactions">
+
+  <table id="transactions-table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Date of Sale</th>
+        <th>Category</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div>
+    <p>Total Sale Amount: <span id="total-sale-amount"></span></p>
+    <p>Total Sold Items: <span id="total-sold-items"></span></p>
+    <p>Total Not Sold Items: <span id="total-not-sold-items"></span></p>
+  </div>
+
+<script src="/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
